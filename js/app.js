@@ -1,5 +1,5 @@
 const totalCards = 12;
-const availableCards = ['A', 'K', 'Q', 'J'];
+const availableCards = ['JS', 'TS', 'C', 'P'];
 let cards = [];
 let selectedCards = [];
 let valuesUsed = [];
@@ -35,17 +35,28 @@ function activate(e) {
 }
 
 function resetGame() {
-    // Reiniciar variables
-    selectedCards = [];
-    valuesUsed = [];
-    currentMove = 0;
-    currentAttempts = 0;
-    document.querySelector('#stats').innerHTML = '0 intentos';
+   // Reiniciar variables
+   selectedCards = [];
+   valuesUsed = [];
+   currentMove = 0;
+   currentAttempts = 0;
+   document.querySelector('#stats').innerHTML = '0 intentos';
 
-    // Voltear todas las cartas
-    document.querySelectorAll('.card').forEach(card => {
-        card.classList.remove('active');
-    });
+   // Reorganizar el orden de las cartas
+   let gameContainer = document.querySelector('#game');
+   while (gameContainer.firstChild) {
+       gameContainer.removeChild(gameContainer.firstChild);
+   }
+   cards = [];
+   for (let i = 0; i < totalCards; i++) {
+       let div = document.createElement('div');
+       div.innerHTML = cardTemplate;
+       cards.push(div);
+       randomValue();
+       cards[i].querySelectorAll('.face')[0].innerHTML = getFaceValue(valuesUsed[i]);
+       gameContainer.appendChild(cards[i]);
+       cards[i].querySelectorAll('.card')[0].addEventListener('click', activate);
+   }
 }
 
 function randomValue() {

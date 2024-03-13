@@ -65,5 +65,13 @@ body {
 
 .card .back {
    border: 3px solid #05d1fe;
-   /* background: url(img/logo.png) center / contain no-repeat; */
+}
+
+#resetButton {
+   display: block; /* Convertir el botón en un elemento de bloque */
+   margin: 0 auto; /* Establecer margen automático en los lados izquierdo y derecho */
+   background-color: rgb(255, 238, 0);
+   border-radius: 15px;
+   color: rgb(187, 10, 10);
+   
 }
