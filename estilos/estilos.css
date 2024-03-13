@@ -65,5 +65,5 @@ body {
  
  .card .back {
     border: 3px solid #edfe05;
-    background: url(img/JS.png);
+    background: url(img/JS.png) center / contain none;
  }
