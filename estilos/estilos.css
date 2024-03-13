@@ -1,6 +1,6 @@
 body {
    margin: 0;
-   background: rgb(150, 148, 36);
+   background: rgb(173, 163, 19);
    overflow: hidden;
 }
 
@@ -68,10 +68,12 @@ body {
 }
 
 #resetButton {
+   margin: 500px;
    display: block; /* Convertir el botón en un elemento de bloque */
    margin: 0 auto; /* Establecer margen automático en los lados izquierdo y derecho */
-   background-color: rgb(255, 238, 0);
+   background-color: rgb(0, 255, 64);
    border-radius: 15px;
    color: rgb(187, 10, 10);
-   
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: large;
 }
