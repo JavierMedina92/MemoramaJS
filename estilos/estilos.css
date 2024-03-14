@@ -68,12 +68,34 @@ body {
 }
 
 #resetButton {
-   margin: 500px;
-   display: block; /* Convertir el botón en un elemento de bloque */
-   margin: 0 auto; /* Establecer margen automático en los lados izquierdo y derecho */
-   background-color: rgb(0, 255, 64);
-   border-radius: 15px;
-   color: rgb(187, 10, 10);
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: large;
+   background-color: #18c042bd; 
+   color: rgba(250, 6, 6, 0.932);
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+   transition: background-color 0.3s;
+}
+
+#resetButton:hover {
+   background-color: rgb(15, 15, 211);
+   color: chartreuse;
+}
+
+#regresar {
+   background-color: #082cfaf1; 
+   color: rgb(241, 245, 16);
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+   transition: background-color 0.3s;
+}
+
+/* Estilos para el efecto hover */
+#regresar:hover {
+   background-color: rgb(48, 211, 15);
+   color: rgb(25, 0, 255);
 }

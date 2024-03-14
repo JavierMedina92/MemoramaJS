@@ -1,5 +1,5 @@
-const totalCards = 12;
-const availableCards = ['JS', 'TS', 'C', 'P'];
+const totalCards = 14;
+const availableCards = ['JS', '#', 'C', 'W', '3', 'A', 'bd'];
 let cards = [];
 let selectedCards = [];
 let valuesUsed = [];
@@ -89,3 +89,7 @@ for (let i = 0; i < totalCards; i++) {
 
 // Agregar un oyente de eventos al botón de reinicio
 document.getElementById('resetButton').addEventListener('click', resetGame);
+
+function redireccionar() {
+    window.location.href = "https://desarrollowebjaviermedina.netlify.app/";
+}
